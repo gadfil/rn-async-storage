@@ -1,7 +1,7 @@
 
 {
   "name": "rn-async-storage",
-  "version": "1.0.2",
+  "version": "1.0.21",
   "description": "This is very quickly solution for fix issue  https://github.com/facebook/react-native/issues/14101 ",
   "main": "index.js",
   "scripts": {
