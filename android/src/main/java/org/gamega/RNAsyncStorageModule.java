@@ -43,7 +43,8 @@ public class RNAsyncStorageModule extends ReactContextBaseJavaModule {
              editor.commit();
              promise.resolve(null);
          }catch (Exception e){
-
+             promise.reject(e);
+             e.printStackTrace();
          }
      }
 
@@ -78,6 +79,7 @@ public class RNAsyncStorageModule extends ReactContextBaseJavaModule {
              editor.commit();
              promise.resolve(null);
          }catch (Exception e){
+             promise.reject(e);
              e.printStackTrace();
          }
      }
