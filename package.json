@@ -1,11 +1,16 @@
 
 {
   "name": "rn-async-storage",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "This is very quickly solution for fix issue  https://github.com/facebook/react-native/issues/14101 ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/gadfil/rn-async-storage",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gadfil/rn-async-storage.git"
   },
   "keywords": [
     "react-native",
@@ -15,8 +20,6 @@
   "author": "Oleg Gamega",
   "license": "MIT",
   "peerDependencies": {
-    "react-native": "^0.41.2",
-    "react-native-windows": "0.41.0-rc.1"
-
+    "react-native": "^0.41.2"
   }
 }
