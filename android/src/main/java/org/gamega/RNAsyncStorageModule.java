@@ -58,8 +58,8 @@ public class RNAsyncStorageModule extends ReactContextBaseJavaModule {
          try {
              SharedPreferences sharedPref = getCurrentActivity().getPreferences(Context.MODE_PRIVATE);
              String value = sharedPref.getString(key, null);
-             Log.d("storage/getItem", key);
-             Log.d("storage/getItem", value);
+             Log.d("storage/getItem", key+"");
+             Log.d("storage/getItem", value+"");
              promise.resolve(value);
          }catch (Exception e){
              promise.reject(e);
