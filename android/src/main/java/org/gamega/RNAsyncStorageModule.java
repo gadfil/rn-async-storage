@@ -48,6 +48,24 @@ public class RNAsyncStorageModule extends ReactContextBaseJavaModule {
          }
      }
 
+        /**
+      * Write string value by key
+      * @param key
+      */
+     @ReactMethod
+     public void removeItem(String key, Promise promise){
+         try {
+             SharedPreferences sharedPref = getCurrentActivity().getPreferences(Context.MODE_PRIVATE);
+             SharedPreferences.Editor editor = sharedPref.edit();
+             editor.remove(key);
+             editor.commit();
+             promise.resolve(null);
+         }catch (Exception e){
+             promise.reject(e);
+             e.printStackTrace();
+         }
+     }
+
      /**
       * Get string value by key
       * @param key

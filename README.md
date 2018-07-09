@@ -12,7 +12,7 @@ import {AsyncStorage} from 'react-native'
 ```
  to
  ```javascript
- import {AsyncStorage} from 'rn-async-storage'
+ import AsyncStorage from 'rn-async-storage'
 ```
  .. thats all! :)
 
@@ -22,6 +22,7 @@ For ios you can use all function of AsyncStorage
  - setItem(key, value)
  - getItem(key)
  - getAllKeys()
+ - removeItem()
  - clear()
 
 If you need other methods from AsynStorage let me know
